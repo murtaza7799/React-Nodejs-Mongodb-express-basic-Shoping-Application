@@ -1,0 +1,6 @@
+{
+  "jwtPrivateKey": "myPrivateKey",
+  "db": "mongodb://localhost/sp19-bse",
+  "port": "4000",
+  "sessionSecret": "MySessionSecret"
+}

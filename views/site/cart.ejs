@@ -1,0 +1,52 @@
+
+<div class="cart_section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="cart_container">
+                    
+                    <div class="cart_title">
+                        <h2>Shopping Cart</h2>
+                        <small>  </small></div>
+                    <hr>
+                    <% for(var i=0;i<products.length;i++) {let product = products[i];%>
+                    <div class="cart_items">
+                        <ul class="cart_list">
+                            <li class="cart_item clearfix">
+                                
+                                <div class="cart_item_info d-flex flex-md-row flex-column justify-content-between">
+                                    <div class="cart_item_name cart_info_col">
+                                        <div class="cart_item_title"><%= products[i].name %> </div>
+                                        <div class="cart_item_text"><%= products[i].brand %> </div>
+                                    </div>
+                                    <div class="cart_item_color cart_info_col">
+                                        <div class="cart_item_title">Color</div>
+                                        <div class="cart_item_text"><span style="background-color:#999999;"></span><%= products[i].color %> </div>
+                                    </div>
+                                    
+                                    <div class="cart_item_price cart_info_col">
+                                        <div class="cart_item_title">Price</div>
+                                        <div class="cart_item_text"><%= products[i].price %> PKR </div>
+                                    </div>
+                                   
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr/>
+                    <% } %> 
+                    <div class="order_total">
+                        <div class="order_total_content text-md-right">
+                            <div class="order_total_title">Order Total:</div>
+                            <div class="order_total_amount">
+                                <h4> <%=total  %></h4>
+                               </div>
+                        </div>
+                    </div>
+                    <div class="cart_buttons"> <a href="/" type="button" class="btn btn-primary">Continue Shopping</a>  </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
