@@ -2,6 +2,7 @@ var express = require("express");
 var router = express.Router();
 var Product = require("../models/Product");
 router.get("/cart", async function (req, res, next) {
+  console.log("Cart");
   let cart = req.cookies.cart;
   if (!cart) cart = [];
   let products = await Product.find({ _id: { $in: cart } });

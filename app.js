@@ -28,7 +28,6 @@ app.use(
 
 
 // view engine 
-
 app.set("views", path.join(__dirname, "views"));
 app.set('layout', './layout')
 //app.set("layout login", false);

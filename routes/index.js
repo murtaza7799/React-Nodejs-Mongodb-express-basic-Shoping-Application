@@ -11,6 +11,7 @@ router.get("/signup", function (req, res, next) {
   return res.render("site/signup");
 });
 
+
 router.get("/about", function (req, res, next) {
   return res.render("site/about");
 });
