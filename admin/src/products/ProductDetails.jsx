@@ -17,7 +17,7 @@ const ProductDetails = (props) => {
         console.log(err);
       });
       
-  }, []);
+  }, [params.id]);
   return (
     <div>
       <h4>
